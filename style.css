@@ -324,3 +324,35 @@ header {
     border-bottom: 1px solid var(--gray);
     margin: 0;
 }
+
+/* About Section */
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        max-width: 339px;
+        animation: upAndDownAnimation 4s ease-in-out infinite;
+    }
+}
+
+.about-text {
+    max-width: 515px;
+    
+    p {
+        margin-bottom: 27px;
+    }
+}
+
+@keyframes upAndDownAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+}
