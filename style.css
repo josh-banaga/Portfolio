@@ -356,3 +356,36 @@ header {
     }
 
 }
+
+/* Contacts section  */
+
+.contacts-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 1000px;
+
+    p {
+        max-width: 505px;
+        margin-top: 0;
+    }
+}
+
+.contacts-card {
+    border: 1px solid var(--gray);
+    padding: 16px;
+
+    h4 {
+        margin-top: 0;
+        margin-bottom: 16px;
+        font-weight: 600;
+    }
+}
+
+.contact {
+    color: var(--gray);
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    margin-top: 8px;
+}
