@@ -27,22 +27,24 @@
                 <li class="nav-item"><a href="aboutme.html" class="nav-link">about me</a></li>
                 <li class="nav-item"><a href="contacts.html" class="nav-link">contacts</a></li>
             </ul>
+            <img src="assets/hamburgerMenu.svg" alt="Navbar Burger Icon" class="burger-icon">
+            <img src="/assets/closeBtn.svg" alt="Close Button Icon" class="close-icon">
         </nav>
     </header>
 
     <div class="social-links">
         <div class="social-links-line"></div>
         <ul>
-            <li><a href="#"><img src="/assets/Github.svg" alt="Github Icon"></a></li>
-            <li><a href="#"><img src="/assets/Landmark.svg" alt="Landmark Icon"></a></li>
-            <li><a href="#"><img src="/assets/Linkedin.svg" alt="LinkedIn Icon"></a></li>
+            <li><a href="https://github.com/josh-banaga" target="_blank"><img src="/assets/Github.svg" alt="Github Icon"></a></li>
+            <li><a href="#"><img src="/assets/Landmark.svg" target="_blank" alt="Landmark Icon" ></a></li>
+            <li><a href="https://www.linkedin.com/in/joshua-banaga/"><img src="/assets/Linkedin.svg" target="_blank" alt="LinkedIn Icon"></a></li>
         </ul>
     </div>
     <main>
         <div class="main-container">
             <section class="hero">
                 <div class="hero-content">
-                    <h2>Joshua is a <span>web designer</span> and <span>front-end developer</span></h2>
+                    <h2>Joshua is a <span>web designer</span> and <span>full-stack developer</span></h2>
                     <p>He crafts responsive websites where technologies meet creativity</p>
                     <button class="contact-button">Contact me !!</button>
                 </div>
@@ -59,8 +61,8 @@
             </section>
 
             <section class="quote">
-                <blockquote>With great power comes great electricity bill.</blockquote>
-                <figcaption>- Dr. Who</figcaption>
+                <blockquote>Every challenge is a chance to grow.</blockquote>
+                <figcaption>- John Maxwell</figcaption>
             </section>
             
             <section class="projects">
@@ -219,5 +221,39 @@
             </section>
         </div>
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo-wrapper">
+                        <div class="footer-logo">
+                            <img src="/assets/logo.svg" alt="Website Logo" class="logo-img">
+                            <h4>Joshua</h4>
+                        </div>
+                        <a href="mailto:jbanaga.yvr@gmail.com">jbanaga.yvr@gmail.com</a>
+                    </div>
+                    <p>Web designer and full-stack developer</p>
+                </div>
+                <div class="footer-media">
+                    <h3>Media</h3>
+                    <a href="https://github.com/josh-banaga" target="_blank"><img src="/assets/Github.svg" alt="Github Icon"></a>
+                    <a href="https://www.linkedin.com/in/joshua-banaga/" target="_blank"><img src="/assets/Linkedin.svg" alt="LinkedIn Icon"></a>
+                </div>
+            </div>
+            <p class="copyright">© Copyright 2024. Made by Joshua</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamMenu = document.querySelector('.burger-icon');
+        const navMenu = document.querySelector('.nav-list');
+
+        hamMenu.addEventListener('click', () => {
+            hamMenu.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        })
+        
+    </script>
 </body>
 </html>
