@@ -247,10 +247,19 @@
 
     <script>
         const hamMenu = document.querySelector('.burger-icon');
+        const close = document.querySelector('.close-icon');
         const navMenu = document.querySelector('.nav-list');
+        const nav = document.querySelector('.navbar')
 
         hamMenu.addEventListener('click', () => {
             hamMenu.classList.toggle('active');
+            if (hamMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+                hamMenu.classList.remove('hidden')
+            }
+            
             navMenu.classList.toggle('active');
         })
         
